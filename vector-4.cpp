@@ -12,8 +12,8 @@ void pv(vector<int>& v) {
 int main() {
 	vector<int> v1 = { 9,8,7,6,5 };
 	cout << v1[2] << endl;
-	cout << v1.at(2) << endl;//ÄÜ¼ì²éÏÂ±êÔ½½ç
-	//ÄÚ´æ½»»»
+	cout << v1.at(2) << endl;//èƒ½æ£€æŸ¥ä¸‹æ ‡è¶Šç•Œ
+	//å†…å­˜äº¤æ¢
 	vector<int> v2 = { 1,2,3,4,5,};
 	cout << "v1:";
 	pv(v1);
@@ -25,17 +25,17 @@ int main() {
 	cout << "v2:";
 	pv(v2);
 	cout << "------" << endl;
-	//ËõÈİ
+	//ç¼©å®¹
 	v1.resize(1000000);
 	v1.resize(5);
 	cout << v1.capacity() << endl;
-	vector<int>(v1).swap(v1);//ÄäÃû¶ÔÏó
-	cout << v1.capacity() << endl;//¿½±´¹¹ÔìÊ±ÈİÁ¿Óë¿½±´½øÀ´µÄÄÚ´æÒ»Ñù
-	//ËùÒÔv1µÄÈİÁ¿ÎªÄäÃû¶ÔÏóµÄÈİÁ¿
+	vector<int>(v1).swap(v1);//åŒ¿åå¯¹è±¡
+	cout << v1.capacity() << endl;//æ‹·è´æ„é€ æ—¶å®¹é‡ä¸æ‹·è´è¿›æ¥çš„å†…å­˜ä¸€æ ·
+	//æ‰€ä»¥v1çš„å®¹é‡ä¸ºåŒ¿åå¯¹è±¡çš„å®¹é‡
 	 cout << "------" << endl;
-	//ÄÚ´æÇåÀí
+	//å†…å­˜æ¸…ç†
 	 v2.resize(1000000);
-	 v2.clear();//ÀïÃæµÄÔªËØÃ»ÓĞÁËµ«ÈİÁ¿»¹ÔÚ
+	 v2.clear();//é‡Œé¢çš„å…ƒç´ æ²¡æœ‰äº†ä½†å®¹é‡è¿˜åœ¨
 	 cout << v2.capacity() << endl;
 	 vector<int>({}).swap(v2);
 	 cout << v2.capacity() << endl;
@@ -43,4 +43,5 @@ int main() {
 	 
 
 	return 0;
+
 }
